@@ -45,7 +45,7 @@ int clist_ins_next(CList* list, CListElmt *element, const void *data) {
   return 0;
 }
 
-int clist_rem_next(CList* list, CListElmt* element, void** data) {
+int clist_rem_next(CList* list, CListElmt* element, const void** data) {
   CListElmt *old_element;
 
   if(clist_size(list) == 0) {
